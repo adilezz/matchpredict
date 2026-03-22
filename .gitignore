@@ -1,0 +1,81 @@
+# ── Python ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+*.whl
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ── Virtual environments ───────────────────────────────
+backend/venv/
+venv/
+.venv/
+env/
+
+# ── Environment variables (secrets) ───────────────────
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# ── Data & model artifacts (large / regenerable) ──────
+backend/data/
+backend/ml_models/
+*.db
+*.sqlite3
+
+# ── Logs ───────────────────────────────────────────────
+*.log
+logs/
+
+# ── Node.js / Next.js (dependencies & build output) ────
+node_modules/
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+frontend/.vercel/
+*.tsbuildinfo
+
+# ── npm / yarn / pnpm ──────────────────────────────────
+.npm
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+package-lock.json.bak
+yarn-error.log
+pnpm-debug.log*
+
+# ── IDE / Editor ──────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.cursor/
+
+# ── OS ─────────────────────────────────────────────────
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ── ML / debug artifacts (local only) ─────────────────
+backend/catboost_info/
+backend/fbref_debug.html
+
+# ── Misc ───────────────────────────────────────────────
+*.bak
+*.tmp
+*.temp
